@@ -1,0 +1,32 @@
+// Metadata
+:description: Document description
+:keywords: Jekdoc, Asciidoc, Latex
+:title: Sample Asciidoctor/LaTeX Document Using Jekdoc Tags
+:shorttitle: Jekdoc
+:leftheader: Pesigan & Doe
+:author_1: Ivan Jacob Agaloos Pesigan
+:email_1: i.j.a.pesigan@connect.um.edu.mo
+:orcid_1: 0000-0003-4818-8420
+:department_1: Department of Psychology
+:affiliation_1: University of Macau
+:author_2: John Doe
+:email_2: johndoe@email.com
+:department_2: Department of Psychology
+:affiliation_2: University of Macau
+:orcid_2: 0000-0000-0000-0000
+:corresponding_author: Ivan Jacob Agaloos Pesigan
+:corresponding_address: Department of Psychology, Faculty of Social Sciences, Avenida da Universidade, University of Macau, Taipa, Macau SAR, China
+:corresponding_email: i.j.a.pesigan@connect.um.edu.mo
+:latex_author_format: \author{Ivan Jacob Agaloos Pesigan and John Doe}
+:latex_affiliation_format: \affiliation{University of Macau}
+// Settings
+:icons: font
+:doctype: article
+:linkattrs:
+:data-uri:
+// Math
+:stem: latexmath
+:eqnums:
+// Table of contents
+:toc: left
+:toclevels: 5
