@@ -1,3 +1,0 @@
-#+ title, echo=FALSE, fig.caption="This is the caption"
-lkdjhfklajgklja
-jhdflkajhlk;fgjkl
