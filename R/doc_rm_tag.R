@@ -4,7 +4,7 @@
 #' @inheritParams doc_retag
 #' @export
 doc_rm_tag <- function(tag,
-                      jdoc) {
+                       jdoc) {
   exe <- function(tag,
                   jdoc) {
     gsub(
