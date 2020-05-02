@@ -2,4 +2,14 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^data_raw$
-^.travis.yml$
+^\.travis\.yml$
+^\.covrignore$
+^_pkgdown\.yml$
+^docs$
+^\.github$
+^README\.Rmd$
+^README\.md$
+^README\.html$
+^jeksterslabRdoc\.Rproj$
+^appveyor\.yml$
+^Makefile$
