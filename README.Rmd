@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 The goal of `jeksterslabRdoc` is to provide useful utility functions
-to support writing using the `Jekdoc` markup language.
+to support writing documents using the `Jekdoc` markup language.
 
 ## Installation
 
