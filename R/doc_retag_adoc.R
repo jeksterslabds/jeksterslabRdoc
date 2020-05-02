@@ -3,11 +3,11 @@
 #' @author Ivan Jacob Agaloos Pesigan
 #' @inheritParams doc_retag
 #' @export
-doc_retag_adoc <- function(jdoc_from_file = TRUE,
-                           jdoc_path,
+doc_retag_adoc <- function(from_file = TRUE,
+                           path,
                            jdoc) {
-  if (jdoc_from_file) {
-    jdoc <- readLines(jdoc_path)
+  if (from_file) {
+    jdoc <- readLines(path)
   }
   tag <- c(
     # headings
@@ -37,7 +37,12 @@ doc_retag_adoc <- function(jdoc_from_file = TRUE,
     # references
     "references",
     # appendix
-    "appendix"
+    "appendix",
+    # r inline
+    "\\br",
+    # r chunk
+    "begin\\.rcode",
+    "end\\.rcode"
   )
   open <- c(
     # headings
@@ -67,7 +72,12 @@ doc_retag_adoc <- function(jdoc_from_file = TRUE,
     # references
     "\\=\\= References",
     # appendix
-    "\\=\\= Appendix"
+    "\\=\\= Appendix",
+    # r inline
+    "+r ",
+    # r chunk
+    "// begin.rcode ",
+    "// end.rcode"
   )
   close <- c(
     # headings
@@ -79,18 +89,25 @@ doc_retag_adoc <- function(jdoc_from_file = TRUE,
     # quotation
     "\`\"",
     "\`\'",
+    # subscript and superscript
     "~",
     "^",
     # monospace
     "\`",
     # accents
     "grave;",
+    # reference
     "}",
     # table
     "",
     # references
     "",
     # appendix
+    "",
+    # r inline
+    " +",
+    # r chunk
+    "",
     ""
   )
   jdoc <- doc_retag(

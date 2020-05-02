@@ -7,19 +7,19 @@
 #'   Opening tag replacement.
 #' @param close Character vector.
 #'   Closing tag replacement.
-#' @param jdoc_from_file Logical.
+#' @param from_file Logical.
 #'   If \code{TRUE},
 #'   Jekdoc (\code{jdoc}) is loaded from a file.
-#' @param jdoc_path Path to Jekdoc file.
-#'   Ignored if \code{jdoc_from_file = FALSE}.
+#' @param path Path to Jekdoc file.
+#'   Ignored if \code{from_file = FALSE}.
 #' @param jdoc Character string.
 #'   Jekdoc input file.
 #' @export
 doc_retag <- function(tag,
                       open,
                       close,
-                      jdoc_from_file = FALSE,
-                      jdoc_path,
+                      from_file = FALSE,
+                      path,
                       jdoc) {
   if (!all.equal(
     length(tag),
@@ -28,9 +28,9 @@ doc_retag <- function(tag,
   )) {
     stop("tag, open, and close should have the same length.\n")
   }
-  if (jdoc_from_file) {
+  if (from_file) {
     jdoc <- paste0(
-      readLines(jdoc_path),
+      readLines(path),
       collapse = "\n"
     )
   }
@@ -41,7 +41,8 @@ doc_retag <- function(tag,
     gsub(
       pattern = paste0(
         tag,
-        ":\\[([^]]*)\\]"
+        # ":\\[([^]]*)\\]"
+        ":\\[(.*?)\\]"
       ),
       replacement = paste0(
         open,
@@ -59,5 +60,5 @@ doc_retag <- function(tag,
       jdoc = jdoc
     )
   }
-  jdoc
+  trimws(jdoc)
 }

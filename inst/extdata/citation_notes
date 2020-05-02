@@ -1,0 +1,58 @@
+h2:[Asciidoc]
+
+cite:[van_Dijk_2005]
+
+cite:[van_Dijk_2005, page=3]
+
+fullcite:[van_Dijk_2005]
+
+h2:[Asciidoctor Bibliography and Natbib]
+
+citealt:[van_Dijk_2005]
+
+citep:[van_Dijk_2005]
+
+Citep:[van_Dijk_2005]
+
+citealp:[van_Dijk_2005]
+
+Citealp:[van_Dijk_2005]
+
+citet:[van_Dijk_2005]
+
+Citet:[van_Dijk_2005]
+
+citeauthor:[van_Dijk_2005]
+
+Citeauthor:[van_Dijk_2005]
+
+citeyearpar:[van_Dijk_2005]
+
+citeyear:[van_Dijk_2005]
+
+
+(van Dijk, 2001)
+(Van Dijk, 2001)
+van Dijk, 2001
+Van Dijk, 2001
+van Dijk (2001)
+Van Dijk (2001)
+van Dijk
+Van Dijk
+(2001)
+2001
+
+
+
+
+\parencite
+\Parencite
+\cite
+\Cite
+\textcite
+\Textcite
+\citeauthor
+\Citeauthor
+\citeyearpar
+\citeyear
+

@@ -1,72 +1,100 @@
 #' Abstract.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
-#' @param jdoc_abs_from_file Logical.
-#'   If \code{TRUE},
-#'   Jekdoc abstract is loaded from a file.
-#' @param jdoc_abs_path Path to Jekdoc abstract file.
-#'   Ignored if \code{jdoc_abs_from_file = FALSE}.
-#' @param jdoc_abs Character string.
-#'   Jekdoc abstract input file.
-#' @inheritParams doc_attr_authorheader
+#' @param abstract Character string.
+#'   Abstract with `Jekdoc` tags.
+#' @param keywords Character string.
+#'   Keywords separated by commas.
 #' @export
-doc_abstract <- function(jdoc_abs_from_file,
-                         jdoc_abs_path,
-                         jdoc_abs,
-                         attr_from_file,
-                         attr_path,
-                         attr,
-                         format) {
-  if (jdoc_abs_from_file) {
-    jdoc_abs <- readLines(jdoc_abs_path)
-  }
-  jdoc_abs <- paste0(
-    jdoc_abs,
-    collapse = "\n"
+doc_abstract <- function(abstract,
+                         keywords) {
+  tmp_input <- tempfile()
+  tmp_output_adoc <- tempfile()
+  tmp_output_latex <- tempfile()
+  writeLines(
+    text = abstract,
+    con = tmp_input
   )
-  if (attr_from_file) {
-    attr <- readLines(attr_path)
-  }
-  keywords <- doc_attr(
-    key = "keywords",
-    attr_from_file = FALSE,
-    attr = attr
+  doc_knit_adoc(
+    input = tmp_input,
+    output = tmp_output_adoc
   )
-  if (format == "adoc") {
-    jdoc_abs <- doc_retag_adoc(
-      jdoc_from_file = FALSE,
-      jdoc = jdoc_abs
+  doc_knit_latex(
+    input = tmp_input,
+    output = tmp_output_latex
+  )
+  abstract_adoc <- readLines(tmp_output_adoc)
+  abstract_latex <- readLines(tmp_output_latex)
+  abstract_adoc <- trimws(
+    paste0(
+      abstract_adoc,
+      collapse = "\n"
     )
-    return(
-      paste0(
-        "[abstract]",
-        "\n",
-        ".Abstract",
-        "\n",
-        "--",
-        "\n",
-        jdoc_abs,
-        "\n",
-        "--",
-        "\n\n",
-        "_Keywords:_",
-        " ",
-        keywords
-      )
+  )
+  abstract_latex <- trimws(
+    paste0(
+      abstract_latex,
+      collapse = "\n"
     )
-  }
-  if (format == "latex") {
-    # add retag
-    return(
-      paste0(
-        "\\abstract{",
-        jdoc_abs,
-        "}",
-        "\n\n",
-        "\\keywords{",
-        keywords,
-        "}"
-      )
+  )
+  keywords <- trimws(
+    keywords
+  )
+  abstract_adoc <- doc_retag_adoc(
+    from_file = FALSE,
+    jdoc = abstract_adoc
+  )
+  abstract_latex <- doc_retag_latex(
+    from_file = FALSE,
+    jdoc = abstract_latex
+  )
+  abstract_adoc <- doc_citation_adoc(
+    from_file = FALSE,
+    jdoc = abstract_adoc
+  )
+  # add this later
+  # abstract_latex <- doc_citation_latex(
+  #  from_file = FALSE,
+  #  jdoc = abstract_latex
+  # )
+  adoc <- trimws(
+    paste0(
+      "[abstract]",
+      "\n",
+      ".Abstract",
+      "\n",
+      "--",
+      "\n",
+      abstract_adoc,
+      "\n",
+      "--",
+      "\n\n",
+      "_Keywords:_",
+      " ",
+      keywords
     )
-  }
+  )
+  latex <- trimws(
+    paste0(
+      "\\abstract{",
+      abstract_latex,
+      "}",
+      "\n\n",
+      "\\keywords{",
+      keywords,
+      "}"
+    )
+  )
+  adoc <- list(
+    block = adoc,
+    text = abstract_adoc
+  )
+  latex <- list(
+    block = latex,
+    text = abstract_latex
+  )
+  list(
+    adoc = adoc,
+    latex = latex
+  )
 }

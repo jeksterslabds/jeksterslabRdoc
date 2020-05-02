@@ -1,0 +1,99 @@
+Mediation is a popular model in psychology
+because it allows researchers to investigate mechanisms
+in which a predictor variable stem:[$(X)$]
+indirectly influences an outcome variable stem:[$(Y)$]
+through a mediator variable stem:[$(M)$].
+The effect of stem:[$X$] on stem:[$M$]
+is represented by the regression path stem:[$\alpha$].
+The effect of stem:[$M$] on stem:[$Y$]
+is represented by the regression path stem:[$\beta$],
+controlling for the direct effect of stem:[$M$] on stem:[$Y$]
+represented by stem:[$\tau^{\prime}$].
+The indirect effect of stem:[$X$] on stem:[$Y$]
+via stem:[$M$] is represented
+by the product of stem:[$\alpha$] and stem:[$\beta$].
+
+Originating from the works of Wright citeyearpar:[Wright_1918]+[Wright_1921]+[Wright_1934]
+and Fisher citeyearpar:[Fisher_1935],
+statistical mediation analysis has had a long history in the social sciences
+cite:[Alwin_1975]+[Baron_1986]+[Fox_1980]+[Lewis_Beck_1974]+[MacCorquodale_1948]+[Sobel_1982].
+Methods for making inferences for the indirect effect
+include the causal-steps approach
+cite:[Judd_1981a]+[Judd_1981b]+[James_1984]+[Baron_1986]+[Kenny_1998],
+normal-theory approaches
+cite:[Sobel_1982]+[Sobel_1986]+[Aroian_1947]+[Goodman_1960],
+the distribution of product approach
+cite:[MacKinnon_2004]+[MacKinnon_2007a],
+the Monte Carlo method
+cite:[MacKinnon_2004]+[Preacher_2012],
+and the nonparametric bootstrap approach
+cite:[Bollen_1990]+[MacKinnon_2004]+[Shrout_2002]+[Preacher_2008].
+
+One of the main concerns in relation to making inferences for the indirect effect
+is that its distributioncan can often be asymmetric even if,
+taken separately,
+stem:[$\alpha$] and stem:[$\beta$] are normally distributed
+cite:[Aroian_1947]+[Craig_1936].
+Nonparametric bootstrapping has been shown
+to provide appropriate asymmetric confidence intervals
+for the unstandardized indirect effect
+cite:[Bollen_1990]+[MacKinnon_2004]+[Cheung_2007]+[Shrout_2002]+[Preacher_2008]
+and standardized indirect effect cite:[Cheung_2009a].
+
+There is another type of bootstrapping
+that may be useful in generating confidence intervals
+around the indirect effect,
+i.e., parametric bootstrapping.
+In contrast to nonparametric bootstrapping
+where the original data is resampled with replacement,
+in parametric bootstrapping,
+data are generated parametrically from the fitted model.
+While nonparametric bootstrapping has become the most popular method
+for estimating confidence intervals for indirect effects,
+use of parametric bootstrapping in these types models is limited.
+Furthermore,
+except for a single study on unstandardized indirect effects
+cite:[Preacher_2012],
+methodological studies on the performance of parametric bootstrapping
+both in unstandardized and standardized indirect effects is,
+to our knowledge limited as well.
+
+Aside from the usefulness of parametric bootstrapping in making inferences
+in unstandardized and standardized indirect effects,
+the method is useful in contexts when raw data is unavailable.
+For example,
+nonparametric bootstrapping cannot be used
+to make inferences for indirect effects
+in mediation models
+using the two-step structural equation modeling approach to meta-analysis
+because often in meta-analyses only summary statitics,
+for example, correlation matrices, are available for analysis.
+Parametric bootstrapping can still be applied in this context
+by generating bootstrap data using the parameters estimated from the model.
+
+
+h1:[Objectives of the study]
+
+The main objective of this thesis
+is to evaluate the performance of parametric bootstrapping in three contexts:
+unstandardized indirect effects,
+standardized indirect effects, and
+indirect effects in the two-step structural equation modeling approach
+to meta-analysis.
+
+In addition to this,
+we compared parametric bootstrapping with nonparametric bootstrapping
+in the first and second contexts.
+Similarly we compared parametric bootstrapping
+with likelihood-based confidence intervals in the third context.
+
+h1:[Outline of the following chapter]
+
+WARNING: TO FOLLOW...
+
+//First, I will introduce statistical mediation modeling.
+//I will provide a brief outline of the historical development of the method,
+//summarize notable methodological studies,
+//list of books on the topic.
+
+//In Chapter 2, I will present the technical details of the simple mediation model

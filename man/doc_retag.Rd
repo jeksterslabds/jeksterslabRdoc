@@ -4,7 +4,7 @@
 \alias{doc_retag}
 \title{Replace Jekdoc Tags}
 \usage{
-doc_retag(tag, open, close, jdoc_from_file = FALSE, jdoc_path, jdoc)
+doc_retag(tag, open, close, from_file = FALSE, path, jdoc)
 }
 \arguments{
 \item{tag}{Character vector.
@@ -16,12 +16,12 @@ Opening tag replacement.}
 \item{close}{Character vector.
 Closing tag replacement.}
 
-\item{jdoc_from_file}{Logical.
+\item{from_file}{Logical.
 If \code{TRUE},
 Jekdoc (\code{jdoc}) is loaded from a file.}
 
-\item{jdoc_path}{Path to Jekdoc file.
-Ignored if \code{jdoc_from_file = FALSE}.}
+\item{path}{Path to Jekdoc file.
+Ignored if \code{from_file = FALSE}.}
 
 \item{jdoc}{Character string.
 Jekdoc input file.}

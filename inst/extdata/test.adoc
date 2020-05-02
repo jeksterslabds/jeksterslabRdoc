@@ -1,0 +1,48 @@
+= Sample Asciidoctor/LaTeX Document Using Jekdoc Tags
+:affiliation_1: University of Macau
+:affiliation_2: University of Macau
+:author: Ivan Jacob Agaloos Pesigan
+:author_1: Ivan Jacob Agaloos Pesigan
+:author_2: John H. Doe
+:authorinitials: IJAP
+:authors: Ivan Jacob Agaloos Pesigan, John H. Doe
+:cache-uri:
+:corresponding_address: Department of Psychology, Faculty of Social Sciences, Avenida da Universidade, University of Macau, Taipa, Macau SAR, China
+:corresponding_author: Ivan Jacob Agaloos Pesigan
+:corresponding_email: i.j.a.pesigan@connect.um.edu.mo
+:creationdate: 1970-01-01 00:00:00
+:creator: Ivan Jacob Agaloos Pesigan
+:data-uri:
+:department_1: Department of Psychology
+:department_2: Department of Psychology
+:description: Document description
+:doctype: article
+:email: i.j.a.pesigan@connect.um.edu.mo
+:email_1: i.j.a.pesigan@connect.um.edu.mo
+:email_2: johndoe@email.com
+:eqnums:
+:firstname: Ivan Jacob
+:icons: font
+:imagesdir: images
+:keywords: Jekdoc, Asciidoc, Latex
+:lastname: Pesigan
+:middlename: Agaloos
+:orcid_1: 0000-0003-4818-8420
+:orcid_2: 0000-0000-0000-0000
+:producer: jeksterslabRdoc (1.0.0)
+:revdate: 2020-04-25
+:revnumber: 0.0.0
+:revremark: Revision remarks
+:shorttitle: Jekdoc
+:stem: latexmath
+:subject: Documents
+:title: Sample Asciidoctor/LaTeX Document Using Jekdoc Tags
+:toc: left
+:toclevels: 5
+
+== Author Note
+
+Ivan Jacob Agaloos Pesigan image:/home/jek/R/x86_64-pc-linux-gnu-library/3.6/jeksterslabRdoc/extdata/email.png[link="mailto:i.j.a.pesigan@connect.um.edu.mo", width=25px, height=25px] image:/home/jek/R/x86_64-pc-linux-gnu-library/3.6/jeksterslabRdoc/extdata/orcid.png[link="https://orcid.org/0000-0003-4818-8420", width=20px, height=20px] Department of Psychology, University of Macau; John H. Doe image:/home/jek/R/x86_64-pc-linux-gnu-library/3.6/jeksterslabRdoc/extdata/email.png[link="mailto:johndoe@email.com", width=25px, height=25px] image:/home/jek/R/x86_64-pc-linux-gnu-library/3.6/jeksterslabRdoc/extdata/orcid.png[link="https://orcid.org/0000-0000-0000-0000", width=20px, height=20px] Department of Psychology, University of Macau
+
+Correspondence concerning this article should be addressed to Ivan Jacob Agaloos Pesigan, Department of Psychology, Faculty of Social Sciences, Avenida da Universidade, University of Macau, Taipa, Macau SAR, China
+Email: mailto:i.j.a.pesigan@connect.um.edu.mo[i.j.a.pesigan@connect.um.edu.mo]

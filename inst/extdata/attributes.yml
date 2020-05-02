@@ -1,0 +1,106 @@
+# This is a boilerplate attributes YAML file
+# Some of the fields are specific to AsciiDoc.
+# Others are specific to LaTeX.
+# The following are required fields:
+# - title
+# - firstname (primary author's firstname)
+# - lastname (parimary author's lastname)
+# - authors
+# - subject
+# - keywords
+# - creationdate
+
+# Environment
+doctype: article
+# Header and metadata
+## Title etc.
+title: Sample Asciidoctor/LaTeX Document Using Jekdoc Tags
+shorttitle: Jekdoc
+description: Document description
+abstract: >
+  This document demonstrates how to use monospace:[Jekdoc tags].
+  This document covers the following:
+  headers,
+  text styling,
+  Math,
+  R code,
+  citations,
+  tables
+  and others.
+  The following is a boilerplate text with monospace:[Jekdoc tags].
+  Lorem ipsum dolor sit amet citet:[Anderson04],
+  consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip
+  ex ea commodo consequat citet:[Lane12a; Lane12b].
+  blditl:[This is bold italic text.]
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Excepteur sint occaecat cupidatat non proident,
+  sunt in culpa qui officia deserunt mollit anim id est laborum.
+  bold:[This is bold text.]
+  italic:[This is italic text.]
+  doublequote:[This is text in double quote.]
+  singlequote:[This is text in single quote.]
+  This is an example of text withsuperscript:[superscript].
+  This is an example of text withsubscript:[subscript].
+  monospace:[This is monospace text.]
+  This is an inline Math equation with monospace:[R] code stem:[$\pi = r:[pi]$].
+subject: Documents
+keywords:
+- Jekdoc
+- Asciidoc
+- Latex
+## Dates
+creationdate: 1970-1-1 00:00:00
+revdate: 1970-1-1 00:00:00
+revnumber: 0.0.0
+revremark: Revision remarks
+## Author
+firstname: Ivan Jacob
+middlename: Agaloos
+lastname: Pesigan
+authorinitials: IJAP
+email: i.j.a.pesigan@connect.um.edu.mo
+authors:
+  author01:
+    lastname: Pesigan
+    firstname: Ivan Jacob
+    middlename: Agaloos
+    email: i.j.a.pesigan@connect.um.edu.mo
+    orcid: 0000-0003-4818-8420
+    department: Department of Psychology
+    affiliation: University of Macau
+  author02:
+    lastname: Doe
+    firstname: John
+    middlename: H.
+    email: johndoe@email.com
+    orcid: 0000-0000-0000-0000
+    department: Department of Psychology
+    affiliation: University of Macau
+corresponding_author: Ivan Jacob Agaloos Pesigan
+corresponding_email: i.j.a.pesigan@connect.um.edu.mo
+corresponding_address: >
+  Department of Psychology,
+  Faculty of Social Sciences,
+  Avenida da Universidade,
+  University of Macau,
+  Taipa, Macau SAR,
+  China
+# Table of contents
+toc: left
+toclevels: 5
+# General content and formatting
+cache-uri: true
+data-uri: true
+# Images and icons
+icons: font
+imagesdir: images
+# Math
+stem: latexmath
+eqnums: true
+# Bibliography
+bibliography-database: /media/jeksterslab/scripts/r/jeksterslabRdoc/inst/extdata/bib.bib
+bibliography-tex-style: authoryear
+bibliography-style: apa

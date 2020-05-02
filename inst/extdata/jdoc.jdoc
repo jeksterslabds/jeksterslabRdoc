@@ -1,0 +1,139 @@
+h1:[Headers]
+
+h1:[Header 1]
+
+h2:[Header 2]
+
+h3:[Header 3]
+
+h4:[Header 4]
+
+h5:[Header 5]
+
+h1:[Text Styling]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. blditl:[This is bold italic text.] Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. bold:[This is bold text.] italic:[This is italic text.] doublequote:[This is text in double quote.] singlequote:[This is text in single quote.] This is an example of text withsuperscript:[superscript]. This is an example of text withsubscript:[subscript]. monospace:[This is monospace text.]
+
+Accented grave:[e]
+
+h1:[Math]
+
+h2:[Inline equation]
+
+This is an inline equation: stem:[$\Sigma = \Sigma \left( \theta \right)$].
+
+h2:[Centered equation]
+
+[stem]
+++++
+\begin{equation}
+\label{eq}
+  c^2 = a^2 + b^2
+\end{equation}
+++++
+
+This is a reference to Equation eqref:[eq].
+
+h1:[R]
+
+h2:[Inline]
+
+The following are examples of inline monospace:[R] code.
+
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. r:[x <- c(5, 4, 6, 7); x].
+
+Ut enim ad minim veniam, r:[mean(x)],
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+h2:[R code chunk]
+
+The following are examples of monospace:[R] chunks.
+
+begin.rcode:[test]
+1+1
+rnorm(5)
+1:2+1:3 # a warning
+f=function(){message('Aloha, this is a friendly message!')}
+f()
+1+'a' # mision impossible
+end.rcode:[]
+
+begin.rcode:[cool-plot, fig.width=5, fig.height=4, fig.cap='A wonderful plot.', fig.path='/home/jek/test/']
+par(mar=c(4, 4, .1, .1))
+plot(cars, pch=19)
+end.rcode:[]
+
+h1:[Citations]
+
+citet:[Anderson04] (citet, single)
+
+citet:[Lane12a; Lane12b] (citet, multiple)
+
+citet*:[Anderson04] (citet*, single)
+
+citet*:[Lane12a; Lane12b] (citet*, multiple)
+
+citealt:[Anderson04] (citealt, single)
+
+citealt:[Lane12a; Lane12b] (citealt, multiple)
+
+citealt*:[Anderson04] (citealt*, single)
+
+citealt*:[Lane12a; Lane12b] (citealt*, multiple)
+
+citep:[Anderson04] (citep, single)
+
+citep:[Lane12a; Lane12b] (citep, multiple)
+
+citep*:[Anderson04] (citep*, single)
+
+citep*:[Lane12a; Lane12b] (citep*, multiple)
+
+citealp:[Anderson04] (citealp, single)
+
+citealp:[Lane12a; Lane12b] (citealp, multiple)
+
+citealp*:[Anderson04] (citealp*, single)
+
+citealp*:[Lane12a; Lane12b] (citealp*, multiple)
+
+citeauthor:[Anderson04] (citeauthor, single)
+
+citeauthor:[Lane12a; Lane12b] (citeauthor, multiple)
+
+citeauthor*:[Anderson04] (citeauthor*, single)
+
+citeauthor*:[Lane12a; Lane12b] (citeauthor*, multiple)
+
+citeyear:[Anderson04] (citeyear, single)
+
+citeyear:[Lane12a; Lane12b] (citeyear, multiple)
+
+citeyearpar:[Anderson04] (citeyearpar, single)
+       
+citeyearpar:[Lane12a; Lane12b] (citeyearpar, multiple)
+
+fullcite:[Anderson04] (fullcite)
+
+h1:[Tables]
+
+table:[]
+Heading 1, Heading 2, Heading 3
+
+1, 1, 1
+2, 2, 2
+3, 3, 3
+table:[]
+
+h1:[Others]
+
+noindent:[] No indent text.
+
+references:[]
+
+bibliography::[]
+
+appendix:[]
+

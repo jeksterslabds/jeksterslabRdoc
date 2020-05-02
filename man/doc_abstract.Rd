@@ -4,42 +4,14 @@
 \alias{doc_abstract}
 \title{Abstract.}
 \usage{
-doc_abstract(
-  jdoc_abs_from_file,
-  jdoc_abs_path,
-  jdoc_abs,
-  attr_from_file,
-  attr_path,
-  attr,
-  format
-)
+doc_abstract(abstract, keywords)
 }
 \arguments{
-\item{jdoc_abs_from_file}{Logical.
-If \code{TRUE},
-Jekdoc abstract is loaded from a file.}
+\item{abstract}{Character string.
+Abstract with \code{Jekdoc} tags.}
 
-\item{jdoc_abs_path}{Path to Jekdoc abstract file.
-Ignored if \code{jdoc_abs_from_file = FALSE}.}
-
-\item{jdoc_abs}{Character string.
-Jekdoc abstract input file.}
-
-\item{attr_from_file}{Logical.
-If \code{TRUE},
-attributes (\code{attr}) are extracted from a file.}
-
-\item{attr_path}{Character string.
-Path to attributes file.
-Ignored if \code{attr_from_file = FALSE}.}
-
-\item{attr}{Character vector.
-Asciidoctor attributes key-value pairs.
-Ignored if \code{attr_from_file = TRUE}.}
-
-\item{format}{Character string.
-\code{"adoc"}, Asciidoctor formating.
-\code{"latex"}, Latex formating.}
+\item{keywords}{Character string.
+Keywords separated by commas.}
 }
 \description{
 Abstract.

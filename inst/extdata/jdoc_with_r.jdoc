@@ -1,0 +1,28 @@
+h1:[Title]
+
+:author: Author
+
+h2:[Section 1]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. blditl:[This is bold italic text.] Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. bold:[This is bold text.] italic:[This is italic text.] doublequote:[This is text in double quote.] singlequote:[This is text in single quote.] This is an example of text withsuperscript:[superscript]. This is an example of text withsubscript:[subscript]. monospace:[This is monospace text.]
+
+h2:[R Examples]
+
+Some text-based examples
+from https://raw.githubusercontent.com/yihui/knitr-examples/master/089-minimal.Rasciidoc[Yihui].
+
+// begin.rcode test
+1+1
+rnorm(5)
+1:2+1:3 # a warning
+f=function(){message('Aloha, this is a friendly message!')}
+f()
+1+'a' # mision impossible
+// end.rcode
+
+And you know the value of pi is +r pi+. Let's try some graphics too.
+
+// begin.rcode cool-plot, fig.width=5, fig.height=4, fig.cap='A wonderful plot.'
+par(mar=c(4, 4, .1, .1))
+plot(cars, pch=19)
+// end.rcode

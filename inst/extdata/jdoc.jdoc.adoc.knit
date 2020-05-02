@@ -1,0 +1,148 @@
+h1:[Headers]
+
+h1:[Header 1]
+
+h2:[Header 2]
+
+h3:[Header 3]
+
+h4:[Header 4]
+
+h5:[Header 5]
+
+h1:[Text Styling]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. blditl:[This is bold italic text.] Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. bold:[This is bold text.] italic:[This is italic text.] doublequote:[This is text in double quote.] singlequote:[This is text in single quote.] This is an example of text withsuperscript:[superscript]. This is an example of text withsubscript:[subscript]. monospace:[This is monospace text.]
+
+Accented grave:[e]
+
+h1:[Math]
+
+h2:[Inline equation]
+
+This is an inline equation: stem:[$\Sigma = \Sigma \left( \theta \right)$].
+
+h2:[Centered equation]
+
+[stem]
+++++
+\begin{equation}
+\label{eq}
+  c^2 = a^2 + b^2
+\end{equation}
+++++
+
+This is a reference to Equation eqref:[eq].
+
+h1:[Others]
+
+noindent:[] No indent text.
+
+Table
+
+table:[]
+Heading 1, Heading 2, Heading 3
+
+1, 1, 1
+2, 2, 2
+3, 3, 3
+table:[]
+
+// citealt:[Pesigan_2014] said this
+// too cite:[Crocetti_2014]+[Zamboanga_2015].
+
+h1:[R]
+
+h2:[Inline]
+
+The following are examples of inline monospace:[R] code.
+
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 5, 4, 6, 7.
+
+Ut enim ad minim veniam, 5.5,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+h2:[R code chunk]
+
+The following are examples of monospace:[R] chunks.
+
+
+[source,r]
+----
+1+1
+----
+
+----
+## [1] 2
+----
+
+[source,r]
+----
+rnorm(5)
+----
+
+----
+## [1]  0.01244984  0.54242476 -0.65053726  0.63995228 -0.60078729
+----
+
+[source,r]
+----
+1:2+1:3 # a warning
+----
+
+[WARNING]
+====
+.Warning
+## Warning in 1:2 + 1:3: longer object length is not a multiple of shorter object
+## length
+
+====
+
+----
+## [1] 2 4 4
+----
+
+[source,r]
+----
+f=function(){message('Aloha, this is a friendly message!')}
+f()
+----
+
+[NOTE]
+====
+.Message
+ Aloha, this is a friendly message!
+
+====
+
+[source,r]
+----
+1+'a' # mision impossible
+----
+
+[CAUTION]
+====
+.Error
+## Error in 1 + "a": non-numeric argument to binary operator
+
+====
+
+
+
+[source,r]
+----
+par(mar=c(4, 4, .1, .1))
+plot(cars, pch=19)
+----
+.A wonderful plot.
+image::/home/jek/test/cool-plot-1.png[A wonderful plot.,align=default]
+
+
+references:[]
+
+bibliography::[]
+
+appendix:[]
+

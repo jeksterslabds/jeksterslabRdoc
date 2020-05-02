@@ -1,0 +1,30 @@
+:doctype: article
+:title: Sample Asciidoctor/LaTeX Document Using Jekdoc Tags
+:description: Document description
+:author: Ivan Jacob Agaloos Pesigan
+:email: i.j.a.pesigan@connect.um.edu.mo
+:firstname: Ivan Jacob
+:middlename: Agaloos
+:lastname: Pesigan
+:revdate: 1970-1-1
+:revnumber: 0.0.0
+:revremark: Revision remarks
+:keywords: Jekdoc, Asciidoc, Latex
+:shorttitle: Jekdoc
+:leftheader: Pesigan & Doe
+:authors: Ivan Jacob Agaloos Pesigan, John H. Doe
+:corresponding_author: Ivan Jacob Agaloos Pesigan
+:corresponding_address: Department of Psychology, Faculty of Social Sciences, Avenida da Universidade, University of Macau, Taipa, Macau SAR, China
+:corresponding_email: i.j.a.pesigan@connect.um.edu.mo
+:toc: left
+:toclevels: 5
+:cache-uri:
+:data-uri:
+:icons: font
+:imagesdir: images
+:stem: latexmath
+:eqnums:
+
+= {title}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

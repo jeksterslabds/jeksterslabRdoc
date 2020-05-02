@@ -4,7 +4,7 @@
 \alias{doc_knit}
 \title{Knit Document.}
 \usage{
-doc_knit(input, output)
+doc_knit(input, output = NULL)
 }
 \arguments{
 \item{input}{Character string.
