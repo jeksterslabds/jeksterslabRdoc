@@ -15,7 +15,7 @@ status](https://ci.appveyor.com/api/projects/status/github/jeksterslabds/jekster
 <!-- badges: end -->
 
 The goal of `jeksterslabRdoc` is to provide useful utility functions to
-support writing using the `Jekdoc` markup language.
+support writing documents using the `Jekdoc` markup language.
 
 ## Installation
 
