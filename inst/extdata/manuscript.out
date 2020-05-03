@@ -1,0 +1,17 @@
+\BOOKMARK [1][-]{section*.1}{Author Note}{}% 1
+\BOOKMARK [1][-]{section*.2}{Abstract}{}% 2
+\BOOKMARK [1][-]{section*.3}{Sample Asciidoctor/LaTeX Document Using Jekdoc Tags}{}% 3
+\BOOKMARK [1][-]{section*.4}{Headers}{}% 4
+\BOOKMARK [1][-]{section*.5}{Header 1}{}% 5
+\BOOKMARK [2][-]{section*.6}{Header 2}{section*.5}% 6
+\BOOKMARK [3][-]{section*.7}{Header 3}{section*.6}% 7
+\BOOKMARK [1][-]{section*.10}{Text Styling}{}% 8
+\BOOKMARK [1][-]{section*.11}{Math}{}% 9
+\BOOKMARK [2][-]{section*.12}{Inline equation}{section*.11}% 10
+\BOOKMARK [2][-]{section*.13}{Centered equation}{section*.11}% 11
+\BOOKMARK [1][-]{section*.14}{R}{}% 12
+\BOOKMARK [2][-]{section*.15}{Inline}{section*.14}% 13
+\BOOKMARK [2][-]{section*.16}{R code chunk}{section*.14}% 14
+\BOOKMARK [1][-]{section*.17}{Citations}{}% 15
+\BOOKMARK [1][-]{section*.18}{Comment}{}% 16
+\BOOKMARK [1][-]{section*.19}{Others}{}% 17

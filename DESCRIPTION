@@ -25,7 +25,8 @@ Imports:
     gsubfn
 Remotes:
     jeksterslabds/jeksterslabRutils
-Suggests: rmarkdown, testthat
+Suggests:
+    testthat
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0

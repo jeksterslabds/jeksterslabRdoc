@@ -32,12 +32,12 @@ doc_retag_adoc <- function(from_file = TRUE,
     "grave",
     # reference
     "eqref",
-    # table
-    "table",
     # references
     "references",
     # appendix
     "appendix",
+    # comment
+    "comment",
     # r inline
     "\\br",
     # r chunk
@@ -67,12 +67,12 @@ doc_retag_adoc <- function(from_file = TRUE,
     "\\&",
     # reference
     "\\\\eqref{",
-    # table
-    ",\\=\\=\\=",
     # references
     "\\=\\= References",
     # appendix
     "\\=\\= Appendix",
+    # comment
+    "// ",
     # r inline
     "+r ",
     # r chunk
@@ -98,11 +98,11 @@ doc_retag_adoc <- function(from_file = TRUE,
     "grave;",
     # reference
     "}",
-    # table
-    "",
     # references
     "",
     # appendix
+    "",
+    # comment
     "",
     # r inline
     " +",

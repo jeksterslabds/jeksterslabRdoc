@@ -66,7 +66,7 @@ doc_knit <- function(input,
   if (interactive()) {
     cat(
       paste(
-        "Output file:",
+        "doc_knit output file:",
         output,
         "\n"
       )

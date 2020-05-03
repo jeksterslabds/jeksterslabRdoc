@@ -62,14 +62,14 @@ doc_knit_latex <- function(input,
   jdoc <- readLines(input)
   tag <- c(
     # r inline
-    "r",
+    "\\br",
     # r chunk
     "begin.rcode",
     "end.rcode"
   )
   open <- c(
     # r inline
-    "\\rinline{",
+    "\\\\rinline{",
     # r chunk
     "%% begin.rcode ",
     "%% end.rcode"

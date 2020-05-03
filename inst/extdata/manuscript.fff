@@ -1,0 +1,5 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\includegraphics[width=\maxwidth]{/home/jek/test/cool-plot-1} \caption[A wonderful plot]{A wonderful plot.}\label{fig:cool-plot}
+\end{figure*}

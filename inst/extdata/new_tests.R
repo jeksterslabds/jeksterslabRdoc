@@ -79,7 +79,7 @@ system(
   )
 )
 
-
+rpkg()
 library(jeksterslabRdoc)
 attributes_yml <- system.file(
   "extdata",
@@ -95,5 +95,46 @@ jdoc <- system.file(
 )
 doc_manuscript(
   jdoc = jdoc,
-  attributes_yml = attributes_yml
+  attributes_yml = attributes_yml,
+  packages = c(
+    "mathtools",
+    "hyperref"
+  )
+)
+
+tinytex::latexmk(
+  file = "manuscript.tex",
+  engine = "pdflatex",
+  bib_engine = "biber"
+)
+
+
+
+
+tinytex::latexmk(
+  "test.tex",
+  engine = "xelatex",
+  bib_engine = "biber"
+)
+
+
+
+jdoc <- system.file(
+  "extdata",
+  "jdoc.jdoc",
+  package = "jeksterslabRdoc",
+  mustWork = TRUE
+)
+out <- doc_retag_latex(
+  from_file = TRUE,
+  path = jdoc
+)
+out <- doc_citation_latex(
+  from_file = FALSE,
+  jdoc = out,
+  biblatex = TRUE
+)
+writeLines(
+  text = out,
+  con = "test.tex"
 )

@@ -1,0 +1,11 @@
+base
+methods
+jeksterslabRpkg
+colorout
+datasets
+utils
+grDevices
+graphics
+stats
+jeksterslabRdoc
+knitr

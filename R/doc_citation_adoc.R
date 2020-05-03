@@ -21,35 +21,12 @@ doc_citation_adoc <- function(from_file = TRUE,
         ":\\[.*?\\]"
       ),
       replacement = ~ gsub(
-        pattern = ";[\\s]*",
+        pattern = ",[\\s]*",
         replacement = "]+[",
         x = x
       ),
       x = jdoc
     )
-
-    # jdoc <- gsub(
-    #  pattern = paste0(
-    #    tag,
-    #    ":\\[(.*?)\\]"
-    #  ),
-    #  replacement = "<\\1>",
-    #  x = jdoc
-    # )
-    # jdoc <- gsub(
-    #  pattern = "; (?=[^][{}]*})",
-    #  replacement = "]+[",
-    #  x = jdoc,
-    #  perl = TRUE
-    # )
-    # gsub(
-    #  pattern = "\\{(.*?)\\}",
-    #  replacement = paste0(
-    #    tag,
-    #    ":[\\1]"
-    #  ),
-    #  x = jdoc
-    # )
   }
   tag <- c(
     "citet",

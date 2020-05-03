@@ -188,6 +188,11 @@ doc_authorinfo <- function(attributes_yml = NULL,
       "et al."
     )
   }
+  leftheader <- paste0(
+    "\\leftheader{",
+    leftheader,
+    "}"
+  )
   ################################################################
   # latex author
   ################################################################
@@ -413,13 +418,15 @@ doc_authorinfo <- function(attributes_yml = NULL,
   ################################################################
   list(
     authornote = authornote,
-    leftheader = leftheader,
     author = author,
     authors = authors,
     lastnames = lastnames,
     emails = emails,
     orcids = orcids,
     departments = departments,
-    affiliations = affiliations
+    affiliations = affiliations,
+    author_latex = author_latex,
+    affiliation_latex = affiliation_latex,
+    leftheader = leftheader
   )
 }

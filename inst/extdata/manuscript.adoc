@@ -1,0 +1,258 @@
+= Sample Asciidoctor/LaTeX Document Using Jekdoc Tags
+:abstract: This document demonstrates how to use `Jekdoc tags`. This document covers the following: headers, text styling, Math, R code, citations, tables and others. The following is a boilerplate text with `Jekdoc tags`. Lorem ipsum dolor sit amet citet:[Anderson04], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat citet:[Lane12a]+[ Lane12b]. *_This is bold italic text._* Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. *This is bold text.* _This is italic text._ "`This is text in double quote.`" '`This is text in single quote.`' This is an example of text with^superscript^. This is an example of text with~subscript~. `This is monospace text.` This is an inline Math equation with `R` code stem:[$\pi = 3.1415927$].
+:affiliation_1: University of Macau
+:affiliation_2: University of Macau
+:author: Ivan Jacob Agaloos Pesigan
+:author_1: Ivan Jacob Agaloos Pesigan
+:author_2: John H. Doe
+:authorinitials: IJAP
+:authors: Ivan Jacob Agaloos Pesigan, John H. Doe
+:bibliography-database: /media/jeksterslab/scripts/r/jeksterslabRdoc/inst/extdata/bib.bib
+:bibliography-style: apa
+:bibliography-tex-style: authoryear
+:cache-uri:
+:corresponding_address: Department of Psychology, Faculty of Social Sciences, Avenida da Universidade, University of Macau, Taipa, Macau SAR, China
+:corresponding_author: Ivan Jacob Agaloos Pesigan
+:corresponding_email: i.j.a.pesigan@connect.um.edu.mo
+:creationdate: 1970-01-01 00:00:00
+:creator: Ivan Jacob Agaloos Pesigan
+:data-uri:
+:department_1: Department of Psychology
+:department_2: Department of Psychology
+:description: Document description
+:doctype: article
+:email: i.j.a.pesigan@connect.um.edu.mo
+:email_1: i.j.a.pesigan@connect.um.edu.mo
+:email_2: johndoe@email.com
+:eqnums:
+:firstname: Ivan Jacob
+:icons: font
+:imagesdir: images
+:keywords: Jekdoc, Asciidoc, Latex
+:lastname: Pesigan
+:middlename: Agaloos
+:orcid_1: 0000-0003-4818-8420
+:orcid_2: 0000-0000-0000-0000
+:producer: jeksterslabRdoc (1.0.0)
+:revdate: 2020-05-03
+:revnumber: 0.0.0
+:revremark: Revision remarks
+:shorttitle: Jekdoc
+:stem: latexmath
+:subject: Documents
+:title: Sample Asciidoctor/LaTeX Document Using Jekdoc Tags
+:toc: left
+:toclevels: 5
+
+== Author Note
+
+Ivan Jacob Agaloos Pesigan
+image:/home/jek/R/x86_64-pc-linux-gnu-library/4.0/jeksterslabRdoc/extdata/email.png[link="mailto:i.j.a.pesigan@connect.um.edu.mo", width=25px, height=25px]
+image:/home/jek/R/x86_64-pc-linux-gnu-library/4.0/jeksterslabRdoc/extdata/orcid.png[link="https://orcid.org/0000-0003-4818-8420", width=20px, height=20px]
+Department of Psychology,
+University of Macau;
+John H. Doe
+image:/home/jek/R/x86_64-pc-linux-gnu-library/4.0/jeksterslabRdoc/extdata/email.png[link="mailto:johndoe@email.com", width=25px, height=25px]
+image:/home/jek/R/x86_64-pc-linux-gnu-library/4.0/jeksterslabRdoc/extdata/orcid.png[link="https://orcid.org/0000-0000-0000-0000", width=20px, height=20px]
+Department of Psychology,
+University of Macau
+
+Correspondence concerning this article should be addressed to
+Ivan Jacob Agaloos Pesigan,
+Department of Psychology, Faculty of Social Sciences, Avenida da Universidade, University of Macau, Taipa, Macau SAR, China.
+Email: mailto:i.j.a.pesigan@connect.um.edu.mo[i.j.a.pesigan@connect.um.edu.mo]
+
+[abstract]
+.Abstract
+--
+This document demonstrates how to use `Jekdoc tags`. This document covers the following: headers, text styling, Math, R code, citations, tables and others. The following is a boilerplate text with `Jekdoc tags`. Lorem ipsum dolor sit amet citet:[Anderson04], consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat citet:[Lane12a]+[ Lane12b]. *_This is bold italic text._* Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. *This is bold text.* _This is italic text._ "`This is text in double quote.`" '`This is text in single quote.`' This is an example of text with^superscript^. This is an example of text with~subscript~. `This is monospace text.` This is an inline Math equation with `R` code stem:[$\pi = 3.1415927$].
+--
+
+_Keywords:_ Jekdoc, Asciidoc, Latex
+
+== Headers
+
+== Header 1
+
+=== Header 2
+
+==== Header 3
+
+===== Header 4
+
+====== Header 5
+
+== Text Styling
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. *_This is bold italic text._* Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. *This is bold text.* _This is italic text._ "`This is text in double quote.`" '`This is text in single quote.`' This is an example of text with^superscript^. This is an example of text with~subscript~. `This is monospace text.`
+
+Accented &egrave;
+
+== Math
+
+=== Inline equation
+
+This is an inline equation: stem:[$\Sigma = \Sigma \left( \theta \right)$].
+
+=== Centered equation
+
+[stem]
+++++
+\begin{equation}
+\label{eq}
+c^2 = a^2 + b^2
+\end{equation}
+++++
+
+This is a reference to Equation \eqref{eq}.
+
+== R
+
+=== Inline
+
+The following are examples of inline `R` code.
+
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 5, 4, 6, 7.
+
+Ut enim ad minim veniam, 5.5,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+=== R code chunk
+
+The following are examples of `R` chunks.
+
+[source,r]
+----
+1+1
+----
+
+----
+## [1] 2
+----
+
+[source,r]
+----
+rnorm(5)
+----
+
+----
+## [1]  1.1539654  0.3194278 -0.7454176  0.6598974  0.3110112
+----
+
+[source,r]
+----
+1:2+1:3 # a warning
+----
+
+[WARNING]
+====
+.Warning
+## Warning in 1:2 + 1:3: longer object length is not a multiple of shorter object
+## length
+
+====
+
+----
+## [1] 2 4 4
+----
+
+[source,r]
+----
+f=function(){message('Aloha, this is a friendly message!')}
+f()
+----
+
+[NOTE]
+====
+.Message
+Aloha, this is a friendly message!
+
+====
+
+[source,r]
+----
+1+'a' # mision impossible
+----
+
+[CAUTION]
+====
+.Error
+## Error in 1 + "a": non-numeric argument to binary operator
+
+====
+
+[source,r]
+----
+par(mar=c(4, 4, .1, .1))
+plot(cars, pch=19)
+----
+.A wonderful plot.
+image::/home/jek/test/cool-plot-1.png[A wonderful plot.,align=default]
+
+== Citations
+
+citet:[Anderson04] (citet, single)
+
+citet:[Lane12a]+[ Lane12b] (citet, multiple)
+
+citet*:[Anderson04] (citet*, single)
+
+citet*:[Lane12a]+[ Lane12b] (citet*, multiple)
+
+citealt:[Anderson04] (citealt, single)
+
+citealt:[Lane12a]+[ Lane12b] (citealt, multiple)
+
+citealt*:[Anderson04] (citealt*, single)
+
+citealt*:[Lane12a]+[ Lane12b] (citealt*, multiple)
+
+citep:[Anderson04] (citep, single)
+
+citep:[Lane12a]+[ Lane12b] (citep, multiple)
+
+citep*:[Anderson04] (citep*, single)
+
+citep*:[Lane12a]+[ Lane12b] (citep*, multiple)
+
+citealp:[Anderson04] (citealp, single)
+
+citealp:[Lane12a]+[ Lane12b] (citealp, multiple)
+
+citealp*:[Anderson04] (citealp*, single)
+
+citealp*:[Lane12a]+[ Lane12b] (citealp*, multiple)
+
+citeauthor:[Anderson04] (citeauthor, single)
+
+citeauthor:[Lane12a]+[ Lane12b] (citeauthor, multiple)
+
+citeauthor*:[Anderson04] (citeauthor*, single)
+
+citeauthor*:[Lane12a]+[ Lane12b] (citeauthor*, multiple)
+
+citeyear:[Anderson04] (citeyear, single)
+
+citeyear:[Lane12a]+[ Lane12b] (citeyear, multiple)
+
+citeyearpar:[Anderson04] (citeyearpar, single)
+
+citeyearpar:[Lane12a]+[ Lane12b] (citeyearpar, multiple)
+
+fullcite:[Anderson04] (fullcite)
+
+== Comment
+
+// kjkjklsjgjhbjnjglksjgkjsgf
+
+== Others
+
+No indent text.
+
+== References
+
+bibliography::[]
+
+== Appendix

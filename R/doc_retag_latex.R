@@ -33,14 +33,20 @@ doc_retag_latex <- function(from_file = TRUE,
     # reference
     "eqref",
     # noindent
-    "noindent"
-    # find the best way to convert the following from jdoc to latex
-    # table
-    # "table",
+    "noindent",
     # references
-    # "references",
+    "references",
     # appendix
-    # "appendix"
+    "appendix",
+    # comment
+    "comment",
+    # math
+    "stem",
+    # r inline
+    "\\br",
+    # r chunk
+    "begin.rcode",
+    "end.rcode"
   )
   open <- c(
     # headings
@@ -50,7 +56,7 @@ doc_retag_latex <- function(from_file = TRUE,
     "\\\\paragraph{",
     "\\\\subparagraph{",
     # bold and italic
-    "\\\\textbf{\\emph{",
+    "\\\\textbf{\\\\emph{",
     "\\\\textbf{",
     "\\\\emph{",
     # quotation
@@ -66,14 +72,20 @@ doc_retag_latex <- function(from_file = TRUE,
     # reference
     "\\\\ref{",
     # noindent
-    "\\\\noindent{"
-    # table
-    # create a function to make latex tables from jdoc
-    # ",\\=\\=\\=",
+    "\\\\noindent{",
     # references
-    # "\\=\\= References",
+    "",
     # appendix
-    # "\\=\\= Appendix"
+    "\\\\appendix",
+    # comment
+    "%% ",
+    # math
+    "",
+    # r inline
+    "\\\\rinline{",
+    # r chunk
+    "%% begin.rcode ",
+    "%% end.rcode"
   )
   close <- c(
     # headings
@@ -95,13 +107,20 @@ doc_retag_latex <- function(from_file = TRUE,
     # reference
     "}",
     # noindent
-    "}"
-    # table
-    # "",
+    "}",
     # references
-    # "",
+    "",
     # appendix
-    # ""
+    "",
+    # comment
+    "",
+    # math
+    "",
+    # r inline
+    "}",
+    # r chunk
+    "",
+    ""
   )
   latex <- doc_retag(
     tag = tag,
@@ -109,18 +128,21 @@ doc_retag_latex <- function(from_file = TRUE,
     close = close,
     jdoc = jdoc
   )
-  # asciidoc comments
-  latex <- strsplit(
-    x = latex,
-    split = "\n"
-  )
+  # Bibliography
   latex <- gsub(
-    pattern = "^\\{2}[[:space:]]",
-    replacement = "% ",
+    pattern = "bibliography::\\[\\]",
+    replacement = "\\\\printbibliography",
     x = latex
   )
-  paste0(
-    latex,
-    collapse = "\n"
+  # Block math
+  latex <- gsub(
+    pattern = "\\b\\[stem\\]\\b",
+    replacement = "",
+    x = latex
+  )
+  gsub(
+    pattern = "\\b\\+\\+\\+\\+\\b",
+    replacement = "",
+    x = latex
   )
 }

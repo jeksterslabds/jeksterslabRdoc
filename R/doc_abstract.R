@@ -52,11 +52,11 @@ doc_abstract <- function(abstract,
     from_file = FALSE,
     jdoc = abstract_adoc
   )
-  # add this later
-  # abstract_latex <- doc_citation_latex(
-  #  from_file = FALSE,
-  #  jdoc = abstract_latex
-  # )
+  abstract_latex <- doc_citation_latex(
+    from_file = FALSE,
+    jdoc = abstract_latex,
+    biblatex = TRUE
+  )
   adoc <- trimws(
     paste0(
       "[abstract]",

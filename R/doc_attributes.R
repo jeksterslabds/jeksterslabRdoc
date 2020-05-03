@@ -12,15 +12,6 @@ doc_attributes <- function(attributes_yml,
                            author_latex = NULL,
                            affiliation_latex = NULL,
                            add_authornote = NULL) {
-  # source template attributes.yml if attributes_yml = NULL
-  # if (is.null(attributes_yml)) {
-  #  attributes_yml <- system.file(
-  #    "extdata",
-  #    "attributes.yml",
-  #    package = "jeksterslabRdoc",
-  #    mustWork = TRUE
-  #  )
-  # }
   # read in attributes_yml
   input <- original <- read_yaml(file = attributes_yml)
   # check required fields
@@ -141,7 +132,7 @@ doc_attributes <- function(attributes_yml,
       style = input[["bibliography-style"]]
     )
   } else {
-    bibliography <- NA
+    bibliography <- ""
   }
   ###################################################
   # attributes
@@ -205,6 +196,7 @@ doc_attributes <- function(attributes_yml,
   )
   invisible(
     list(
+      title = input[["title"]],
       attributes = attributes,
       authorinfo = authorinfo,
       abstract = abstract,

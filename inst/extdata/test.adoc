@@ -1,48 +1,144 @@
-= Sample Asciidoctor/LaTeX Document Using Jekdoc Tags
-:affiliation_1: University of Macau
-:affiliation_2: University of Macau
-:author: Ivan Jacob Agaloos Pesigan
-:author_1: Ivan Jacob Agaloos Pesigan
-:author_2: John H. Doe
-:authorinitials: IJAP
-:authors: Ivan Jacob Agaloos Pesigan, John H. Doe
-:cache-uri:
-:corresponding_address: Department of Psychology, Faculty of Social Sciences, Avenida da Universidade, University of Macau, Taipa, Macau SAR, China
-:corresponding_author: Ivan Jacob Agaloos Pesigan
-:corresponding_email: i.j.a.pesigan@connect.um.edu.mo
-:creationdate: 1970-01-01 00:00:00
-:creator: Ivan Jacob Agaloos Pesigan
-:data-uri:
-:department_1: Department of Psychology
-:department_2: Department of Psychology
-:description: Document description
-:doctype: article
-:email: i.j.a.pesigan@connect.um.edu.mo
-:email_1: i.j.a.pesigan@connect.um.edu.mo
-:email_2: johndoe@email.com
-:eqnums:
-:firstname: Ivan Jacob
-:icons: font
-:imagesdir: images
-:keywords: Jekdoc, Asciidoc, Latex
-:lastname: Pesigan
-:middlename: Agaloos
-:orcid_1: 0000-0003-4818-8420
-:orcid_2: 0000-0000-0000-0000
-:producer: jeksterslabRdoc (1.0.0)
-:revdate: 2020-04-25
-:revnumber: 0.0.0
-:revremark: Revision remarks
-:shorttitle: Jekdoc
-:stem: latexmath
-:subject: Documents
-:title: Sample Asciidoctor/LaTeX Document Using Jekdoc Tags
-:toc: left
-:toclevels: 5
+== Headers
 
-== Author Note
+== Header 1
 
-Ivan Jacob Agaloos Pesigan image:/home/jek/R/x86_64-pc-linux-gnu-library/3.6/jeksterslabRdoc/extdata/email.png[link="mailto:i.j.a.pesigan@connect.um.edu.mo", width=25px, height=25px] image:/home/jek/R/x86_64-pc-linux-gnu-library/3.6/jeksterslabRdoc/extdata/orcid.png[link="https://orcid.org/0000-0003-4818-8420", width=20px, height=20px] Department of Psychology, University of Macau; John H. Doe image:/home/jek/R/x86_64-pc-linux-gnu-library/3.6/jeksterslabRdoc/extdata/email.png[link="mailto:johndoe@email.com", width=25px, height=25px] image:/home/jek/R/x86_64-pc-linux-gnu-library/3.6/jeksterslabRdoc/extdata/orcid.png[link="https://orcid.org/0000-0000-0000-0000", width=20px, height=20px] Department of Psychology, University of Macau
+=== Header 2
 
-Correspondence concerning this article should be addressed to Ivan Jacob Agaloos Pesigan, Department of Psychology, Faculty of Social Sciences, Avenida da Universidade, University of Macau, Taipa, Macau SAR, China
-Email: mailto:i.j.a.pesigan@connect.um.edu.mo[i.j.a.pesigan@connect.um.edu.mo]
+==== Header 3
+
+===== Header 4
+
+====== Header 5
+
+== Text Styling
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. *_This is bold italic text._* Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. *This is bold text.* _This is italic text._ "`This is text in double quote.`" '`This is text in single quote.`' This is an example of text with^superscript^. This is an example of text with~subscript~. `This is monospace text.`
+
+Accented &egrave;
+
+== Math
+
+=== Inline equation
+
+This is an inline equation: stem:[$\Sigma = \Sigma \left( \theta \right)$].
+
+=== Centered equation
+
+[stem]
+++++
+\begin{equation}
+\label{eq}
+c^2 = a^2 + b^2
+\end{equation}
+++++
+
+This is a reference to Equation \eqref{eq}.
+
+== R
+
+=== Inline
+
+The following are examples of inline `R` code.
+
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. +r x <- c(5, 4, 6, 7); x +.
+
+Ut enim ad minim veniam, +r mean(x) +,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+=== R code chunk
+
+The following are examples of `R` chunks.
+
+// begin.rcode test
+1+1
+rnorm(5)
+1:2+1:3 # a warning
+f=function(){message('Aloha, this is a friendly message!')}
+f()
+1+'a' # mision impossible
+// end.rcode
+
+// begin.rcode cool-plot, fig.width=5, fig.height=4, fig.cap='A wonderful plot.', fig.path='/home/jek/test/'
+par(mar=c(4, 4, .1, .1))
+plot(cars, pch=19)
+// end.rcode
+
+== Citations
+
+citet:[Anderson04] (citet, single)
+
+citet:[Lane12a; Lane12b] (citet, multiple)
+
+citet*:[Anderson04] (citet*, single)
+
+citet*:[Lane12a; Lane12b] (citet*, multiple)
+
+citealt:[Anderson04] (citealt, single)
+
+citealt:[Lane12a; Lane12b] (citealt, multiple)
+
+citealt*:[Anderson04] (citealt*, single)
+
+citealt*:[Lane12a; Lane12b] (citealt*, multiple)
+
+citep:[Anderson04] (citep, single)
+
+citep:[Lane12a; Lane12b] (citep, multiple)
+
+citep*:[Anderson04] (citep*, single)
+
+citep*:[Lane12a; Lane12b] (citep*, multiple)
+
+citealp:[Anderson04] (citealp, single)
+
+citealp:[Lane12a; Lane12b] (citealp, multiple)
+
+citealp*:[Anderson04] (citealp*, single)
+
+citealp*:[Lane12a; Lane12b] (citealp*, multiple)
+
+citeauthor:[Anderson04] (citeauthor, single)
+
+citeauthor:[Lane12a; Lane12b] (citeauthor, multiple)
+
+citeauthor*:[Anderson04] (citeauthor*, single)
+
+citeauthor*:[Lane12a; Lane12b] (citeauthor*, multiple)
+
+citeyear:[Anderson04] (citeyear, single)
+
+citeyear:[Lane12a; Lane12b] (citeyear, multiple)
+
+citeyearpar:[Anderson04] (citeyearpar, single)
+
+citeyearpar:[Lane12a; Lane12b] (citeyearpar, multiple)
+
+fullcite:[Anderson04] (fullcite)
+
+== Tables
+
+,===
+Heading 1, Heading 2, Heading 3
+
+1, 1, 1
+2, 2, 2
+3, 3, 3
+,===
+
+== Comment
+
+// kjkjklsjgjhbjnjglksjgkjsgf
+
+
+== Others
+
+No indent text.
+
+== References
+
+bibliography::[]
+
+== Appendix
+

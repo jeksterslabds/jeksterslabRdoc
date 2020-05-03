@@ -15,35 +15,35 @@ doc_citation_latex <- function(from_file = TRUE,
   }
   if (biblatex) {
     open <- c(
-      "\\textcite{",
-      "\\textcite*{",
-      "\\citealt{",
-      "\\citealt*{",
-      "\\parencite{",
-      "\\parencite*{",
-      "\\cite{",
-      "\\cite*{",
-      "\\citeauthor{",
-      "\\citeauthor*{",
-      "\\citeyear{",
-      "\\citeyearpar{",
-      "\\fullcite{"
+      "\\\\textcite{",
+      "\\\\textcite*{",
+      "\\\\cite{", # "\\\\citealt{", find biblatex equivalent
+      "\\\\cite*{", # "\\\\citealt*{", find biblatex equivalent
+      "\\\\parencite{",
+      "\\\\parencite*{",
+      "\\\\cite{",
+      "\\\\cite*{",
+      "\\\\citeauthor{",
+      "\\\\citeauthor*{",
+      "\\\\citeyear{",
+      "\\\\citeyear{", # "\\\\citeyearpar{", find biblatex equivalent
+      "\\\\fullcite{"
     )
   } else {
     open <- c(
-      "\\citet{",
-      "\\citet*{",
-      "\\citealt",
-      "\\citealt*{",
-      "\\citep{",
-      "\\citep*{",
-      "\\citealp{",
-      "\\citealp*{",
-      "\\citeauthor{",
-      "\\citeauthor*{",
-      "\\citeyear{",
-      "\\citeyearpar{",
-      "\\fullcite{"
+      "\\\\citet{",
+      "\\\\citet*{",
+      "\\\\citealt",
+      "\\\\citealt*{",
+      "\\\\citep{",
+      "\\\\citep*{",
+      "\\\\citealp{",
+      "\\\\citealp*{",
+      "\\\\citeauthor{",
+      "\\\\citeauthor*{",
+      "\\\\citeyear{",
+      "\\\\citeyearpar{",
+      "\\\\fullcite{"
     )
   }
   tag <- c(
