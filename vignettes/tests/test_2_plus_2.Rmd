@@ -1,0 +1,28 @@
+---
+title: "Test: 2 + 2"
+author: "Ivan Jacob Agaloos Pesigan"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Test: 2 + 2}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r setup}
+library(testthat)
+context("Test 2 + 2.")
+```
+
+
+
+```{r test that_01, echo=TRUE}
+test_that("2 + 2 = 4", {
+  expect_equivalent(
+    2 + 2,
+    4
+  )
+})
+```
+
